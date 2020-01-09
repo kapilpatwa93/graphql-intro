@@ -4,7 +4,6 @@ const links = [{
     url: 'www.howtographql.com',
     description: 'Fullstack tutorial for GraphQL'
 }];
-
 const resolvers = {
     Query: {
         info: () => 'This is clone of the hacker-news',
@@ -29,11 +28,10 @@ const resolvers = {
 };
 
 const server = new GraphQLServer({
-    typeDefs:'./schema.graphql',
+    typeDefs: './src/schema.graphql',
     resolvers
 });
 
 server.start(() => {
     console.log('Server is running on localhost:4000');
-    
 })

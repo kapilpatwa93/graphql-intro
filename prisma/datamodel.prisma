@@ -13,3 +13,11 @@ type User {
     password: String!
     links: [Link!]!
 }
+type Address {
+    id: ID! @id
+    street: String!
+    city: String!
+    state: String!
+    country: String!
+    pincode: Int!
+}

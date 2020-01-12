@@ -30,7 +30,11 @@ type User {
     links: [Link!]!,
     
 }
-
+type Vote {
+    id: ID!,
+    link: Link!,
+    user: User!
+}
 type Address {
     id: ID!,
     street: String!,
@@ -38,4 +42,8 @@ type Address {
     state: String!,
     country: String!,
     pincode: Int!,
+}
+
+type Subscription {
+    newLink: Link
 }

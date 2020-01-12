@@ -5,6 +5,7 @@ const Mutation = require('./resolvers/Mutation');
 const User = require('./resolvers/User');
 const Link = require('./resolvers/Link');
 const Address = require('./resolvers/Address');
+const Subscription = require('./resolvers/Subscription');
 const {ROOT_DIR} = require('./utils');
 
 const resolvers = {
@@ -12,6 +13,7 @@ const resolvers = {
     Mutation,
     Link,
     User,
+    Subscription
 };
 console.log(ROOT_DIR, "dir",__dirname);
 const server = new GraphQLServer({
